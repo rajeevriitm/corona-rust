@@ -20,11 +20,20 @@
     }
 
     #div-1 {
-      width: 10%;
+      width: 20%;
+      position: relative;
+      border: 2px solid rgb(80, 79, 79);
+
+    }
+
+    #div-1 img {
+      position: absolute;
+      top: 90%;
+      right: 0;
     }
 
     #div-2 {
-      width: 80%;
+      width: 70%;
     }
 
     #div-3 {
@@ -35,7 +44,9 @@
 
 <body>
   <div id="container">
-    <div id="div-1"><canvas id="canvas-1"></canvas></div>
+    <div id="div-1">
+      <img src="assets/slingshot.png" width="100">
+    </div>
     <div id="div-2"><canvas id="canvas-2"></canvas></div>
     <div id="div-3"></div>
   </div>

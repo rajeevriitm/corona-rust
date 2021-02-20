@@ -1,3 +1,4 @@
+mod model;
 mod utils;
 use wasm_bindgen::prelude::*;
 mod graphics;
@@ -15,5 +16,7 @@ extern "C" {
 #[wasm_bindgen]
 pub fn greet() {
     // alert("Hello, corona-rust!");
+
     graphics::initializate_dom();
+    utils::set_panic_hook();
 }
