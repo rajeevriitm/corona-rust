@@ -22,7 +22,8 @@
     #div-1 {
       width: 20%;
       position: relative;
-      border: 2px solid rgb(80, 79, 79);
+      border: 4px solid rgb(80, 79, 79);
+      border-right: none;
 
     }
 
@@ -30,14 +31,20 @@
       position: absolute;
       top: 90%;
       right: 0;
+      transform-origin: right center;
     }
 
     #div-2 {
-      width: 70%;
+      width: 60%;
+      /* border-color: rgb(80, 79, 79); */
+      border: 6px ridge rgb(27, 214, 247);
+      /* border-bottom: 4px solid rgb(80, 79, 79); */
     }
 
     #div-3 {
-      width: 10%;
+      width: 20%;
+      border: 4px solid rgb(80, 79, 79);
+      border-left: none;
     }
   </style>
 </head>
@@ -45,7 +52,7 @@
 <body>
   <div id="container">
     <div id="div-1">
-      <img src="assets/slingshot.png" width="100">
+      <img src="assets/slingshot.png" width="80" id="sling-img">
     </div>
     <div id="div-2"><canvas id="canvas-2"></canvas></div>
     <div id="div-3"></div>
