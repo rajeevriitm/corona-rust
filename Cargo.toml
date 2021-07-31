@@ -36,6 +36,7 @@ features = [
     "KeyboardEvent",
     "CssStyleDeclaration",
     "console",
+    'CanvasRenderingContext2d',
 ]
 [dev-dependencies]
 wasm-bindgen-test = "0.3.13"

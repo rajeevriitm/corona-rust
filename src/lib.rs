@@ -17,6 +17,6 @@ extern "C" {
 pub fn greet() {
     // alert("Hello, corona-rust!");
 
-    graphics::initializate_dom();
     utils::set_panic_hook();
+    graphics::initializate_dom();
 }
